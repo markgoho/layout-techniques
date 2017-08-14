@@ -29,3 +29,18 @@ h3 {
 a {
   text-decoration: none;
 }
+
+/* Header styles */
+header {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  background: #3acec2;
+  margin-bottom: 30px;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 2em 0;
+  background: #d9e4ea;
+}
