@@ -29,3 +29,52 @@ h3 {
 a {
   text-decoration: none;
 }
+
+/* Header Styles */
+.wrapper > * {
+  outline: 1px solid black;
+}
+
+header {
+  background: #3acec2;
+  padding: 1.5em 0;
+  margin-bottom: 1.875em;
+  text-align: center;
+}
+
+header .wrapper {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+header h1 a,
+nav a {
+  color: white;
+}
+
+nav {
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  height: 15em;
+  justify-content: space-between;
+}
+
+nav > div {
+  background-color: rgba(200, 200, 200, 0.5);
+  padding: 0.5em;
+}
+
+/* Main Content Styles */
+main {
+  padding: 1em;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  background: #d9e4ea;
+  padding: 2em 1em;
+}
