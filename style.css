@@ -34,6 +34,23 @@ img {
   max-width: 100%;
 }
 
+figure {
+  margin: 0;
+  line-height: 0;
+  position: relative;
+}
+
+figcaption {
+  font-size: 0.9em;
+  line-height: 1.5;
+  color: #fff;
+  padding: 1em;
+  background: rgba(19, 43, 102, 0.85);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
 /* =======================
    Base Layout Styles 
 ======================== */
@@ -93,6 +110,13 @@ main {
   margin-bottom: 0;
 }
 
+.icon-location {
+  width: 3em;
+  position: absolute;
+  top: -1em;
+  right: -1em;
+}
+
 /* Footer */
 footer {
   text-align: center;
@@ -104,6 +128,19 @@ footer {
    Media Queries
    ============================== */
 @media (min-width: 48em) {
+  body {
+    padding-top: 4.25em;
+  }
+
+  header {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.97);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    top: 0;
+    z-index: 2;
+  }
+
   main,
   .container {
     width: 90%;
@@ -153,6 +190,7 @@ footer {
 
   .food {
     flex-basis: 40%;
+    padding: 0 1em;
   }
 
   main {
