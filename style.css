@@ -99,6 +99,9 @@ nav a:hover {
 
 main {
   padding: 1em;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 2em;
 }
 
 /* Page Elements */
@@ -141,59 +144,50 @@ footer {
     z-index: 2;
   }
 
+  .name a {
+    text-align: start;
+  }
+
   main,
   .container {
     width: 90%;
     margin: 0 auto;
   }
 
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .directions {
+    grid-column: span 2;
+  }
+
   header .container {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   nav {
-    display: flex;
-    align-items: center;
+    display: grid;
+    justify-self: end;
+    grid-template-columns: repeat(4, max-content);
+  }
+
+  nav a {
+    align-self: center;
   }
 
   .tagline {
     font-size: 1.4em;
   }
-
-  /* Columns */
-
-  main {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .welcome,
-  .food {
-    flex-basis: 50%;
-  }
-
-  .welcome {
-    padding-right: 1em;
-  }
 }
 
 @media (min-width: 64em) {
-  .welcome,
-  .directions {
-    flex-basis: 30%;
-  }
-
-  .directions {
-    padding-left: 1em;
-  }
-
-  .food {
-    flex-basis: 40%;
-    padding: 0 1em;
-  }
-
   main {
-    flex-wrap: initial;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .directions {
+    grid-column: span 1;
   }
 }
